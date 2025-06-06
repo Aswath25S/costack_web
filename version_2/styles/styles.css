@@ -10,18 +10,175 @@ body {
 }
 
 .container {
-    border: 5px dotted black;
     display: flex;
     width: 90%;
-    
+    max-width: 1400px;
     height: 80vh;
-
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .3);   
 }
 
 .form-container {
-    border: 5px dotted green;
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #024023;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.google-btn {
+    background: #F4F7FE;
+    color: #2B7442;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="email"],input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: border-color .3s ease;
+}
+
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #88c498;
+}
+
+.sign-in-btn {
+    background: #025420;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 90%;
+    border: none;   
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #02542D;
+    text-decoration: none;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+.back-link {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+label {
+    color: #2B7442;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.keep-logged-in {
+    margin: 0;
+}
+
+.divider {
+    text-align: center;
+    margin: 10px auto 20px;
+    color: #aaa;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #02542D;
+    appearance: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.checkbox-container input[type="checkbox"]:checked{
+    background-color: #02542D;
+    content: "c";
+    color: white;
+}
+/* 
+.checkbox-container input[type="checkbox"]:checked::after{
+    content: "c";
+    color: white;
+} */
+
+.checkbox-container label {
+    font-size: 14px;
+    color: #006400;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #02542D;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    color: #2B7442;
+    text-align: center;
+    font-size: 14px;
+}
+
+.create-account a {
+    color: #02542D;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .brand-container {
-    border: 5px dotted yellow;
+    flex: 1;
+    background: url('../images/CostacBanner.svg') no-repeat center center;
+    background-size: cover;
 }
