@@ -135,6 +135,7 @@ label {
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
+    position: relative;
 }
 
 .checkbox-container input[type="checkbox"]:checked{
@@ -142,11 +143,15 @@ label {
     content: "c";
     color: white;
 }
-/* 
+
 .checkbox-container input[type="checkbox"]:checked::after{
-    content: "c";
+    content: "✔";
     color: white;
-} */
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    font-size: 12px;
+}
 
 .checkbox-container label {
     font-size: 14px;
