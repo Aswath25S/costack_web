@@ -66,7 +66,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     border-color: #88c498;
 }
 
-.sign-in-btn {
+.sign-in-btn, .sign-up-btn {
     background: #025420;
     color: white;
     font-size: 16px;
@@ -183,7 +183,7 @@ label {
 }
 
 .brand-container {
-    flex: 1;
+    flex: 1.4;
     background: url('../images/CostacBanner.svg') no-repeat center center;
     background-size: cover;
 }
